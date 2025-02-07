@@ -1,0 +1,99 @@
+.ProductsHunt {
+    column-gap: 30px;
+    justify-content: space-between;
+    .left_side {
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        padding: 20px;
+        border-radius: 14px;
+        column-gap: 30px;
+        row-gap: 30px;
+        background: linear-gradient(180deg, rgba(0, 89, 41, 1) 0%, rgba(0, 50, 35, 1) 50%, rgba(0, 167, 53, 1) 100%);
+
+        img {
+            width: 75%;
+        }
+    }
+
+    .right_side {
+        h2 {
+            font-size: 65px;
+            line-height: 20px;
+        }
+
+        h6 {
+            font-size: 20px;
+            margin-top: -10px;
+            color: rgb(119, 120, 121);
+        }
+
+        width: 45%;
+        border-radius: 14px;
+
+        .user_ti {
+            text-align: end;
+            border-bottom: dashed 1px rgb(112, 112, 112);
+        }
+
+        .rating-cont {
+            display: flex;
+            justify-content: space-between;
+
+
+            .google-play{
+                text-align: end;
+                width: 50%;
+                padding-right: 30px;
+            }
+            .TRANSACTION{
+                border-left: dashed 1px rgb(80, 80, 80);
+                text-align: start;
+                width: 50%;
+                padding-left: 30px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:800px){
+    .ProductsHunt{
+        flex-direction: column;
+        .right_side{
+            width: 95%;
+
+            .user_ti {
+                text-align: center;
+              
+            }
+        }
+        .left_side{
+            width: 90%;
+        }
+    }
+}
+
+@media only screen and (max-width:600px){
+    .ProductsHunt{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .right_side{
+            width: 80%;
+            h2{
+                font-size: 35px;
+            }
+            h6{
+                font-size: 10px;
+            }
+            .user_ti{
+                text-align: center;
+            }
+
+        }
+        .left_side{
+            width: 80%;
+        }
+    }
+}

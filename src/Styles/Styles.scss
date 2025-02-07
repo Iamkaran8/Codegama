@@ -1,0 +1,89 @@
+$Black_Color : #000000;
+$White_Color : #FFFFFF;
+$padding : 40px 0px 40px 0px;
+
+body {
+    background: $Black_Color;
+    color: $White_Color;
+    font-family: "Poppins", serif;
+    font-style: normal;
+    overflow-x: hidden;
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.button{
+    background-color: #1D1D1D;
+    border-radius: 8px;
+    padding: 12px 32px 12px 32px;
+    color: $White_Color;
+    font-size: 18px;
+    border: none !important;
+}
+.button:hover{
+    box-shadow: 0px 5px 100px 1px rgb(59, 59, 59);
+}
+// Global Styles
+.padding {
+    padding: $padding;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex_col {
+    flex-direction: column;
+}
+
+.justify_center {
+    justify-content: center;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.space_between {
+    justify-content: space-between;
+}
+.space_around {
+    justify-content: space-around;
+}
+
+
+$container-max-widths: (
+    xs: 100%,
+    // Extra small devices (default)
+    sm: 540px,
+    // Small devices (≥576px)
+    md: 720px,
+    // Medium devices (≥768px)
+    lg: 960px,
+    // Large devices (≥992px)
+    xl: 1140px,
+    // Extra large devices (≥1200px)
+    xxl: 1320px // Extra extra large devices (≥1400px)
+);
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+
+    @each $breakpoint, $max-width in $container-max-widths {
+        @if $breakpoint ==xs {
+            max-width: $max-width;
+        }
+
+        @else {
+            @media (min-width: #{map-get($container-max-widths, $breakpoint)}) {
+                max-width: $max-width;
+            }
+        }
+    }
+}
+
+// Media Querys

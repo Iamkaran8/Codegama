@@ -1,0 +1,32 @@
+.Reviews{
+    row-gap: 20px;
+    column-gap: 25px;
+    .Reviews_container{
+        border-left: 1px solid rgb(54, 54, 54);
+        padding-left: 20px;
+        .r-name{
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: -35px;
+            color: rgb(73, 73, 73);
+        }
+        .r-position{
+            font-size: 20px;
+            margin-bottom: -5px;
+            color: rgb(73, 73, 73);
+        }
+    }
+}
+
+
+
+// media Query For Mobile
+@media only screen and (max-width:600px){
+    .Reviews{
+        flex-direction: column;
+        .Reviews_container{
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    }
+}

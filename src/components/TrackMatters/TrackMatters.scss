@@ -1,0 +1,80 @@
+.TrackMatters {
+    h2 {
+        font-size: 45px;
+        
+    }
+
+    .data_cards_container {
+        column-gap: 20px;
+
+        .data_cards {
+            border-radius: 15px;
+            width: 27%;
+            h3 {
+                padding: 15px 15px 0px 15px;
+                font-size: 30px;
+                line-height: 30px;
+            }
+
+            p {
+                margin-top: -20px;
+                padding: 15px 15px 0px 15px;
+            }
+
+            img {
+                margin-top: -50%;
+                text-align: left;
+                margin-bottom: -6px;
+                border-bottom-right-radius: 15px;
+                border-bottom-left-radius: 15px;
+                margin-left: 3px;
+            }
+        }
+    }
+
+}
+
+
+// Media Query For Tablet
+
+@media only screen and (max-width:800px){
+    .TrackMatters {
+        h2{
+            text-align: center;
+        }
+    
+    .data_cards_container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        .data_cards{
+            width: 47% ;
+
+            img{
+                width: 99%;
+            }
+        }
+    }
+}
+}
+
+// Media Query For Mobile
+
+@media only screen and (max-width:600px){
+    h2{
+        text-align: center;
+    }
+    .data_cards_container{
+        flex-direction: column;
+
+        .data_cards{
+            width: 96% !important;
+
+            img{
+                width: 99%;
+            }
+        }
+    }
+}

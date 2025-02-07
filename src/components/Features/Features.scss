@@ -1,0 +1,29 @@
+.Features{
+    .left-fut{
+        width: 50%;
+        border-right: dashed 1px rgb(107, 107, 107);
+        padding: 20px;
+    }
+    .right-fut{
+        width: 50%;
+        padding: 20px;
+    }
+}
+
+
+@media only screen and (max-width:800px){
+    .Features{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .left-fut{
+            border: none ;
+            width: 80%;
+        }
+        .right-fut{
+            border: none;
+            width: 80%;
+        }
+    }
+}

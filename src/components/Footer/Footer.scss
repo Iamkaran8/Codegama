@@ -1,0 +1,99 @@
+.footer {
+    background-image: url('../../assets/footer-img.png');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2 {
+        font-size: 50px;
+    }
+
+    .footer-content {
+        margin-top: 50px;
+
+        .footer-dec {
+            padding: 20px 50px 20px 0px;
+
+            .social-cont {
+
+                .social_icon {
+                    background-color: #292929;
+                    margin-right: 10px;
+                    border-radius: 13px;
+                    padding: 10px;
+                }
+
+                .social_icon:hover {
+                    box-shadow: 0px 5px 100px 1px rgb(59, 59, 59);
+                }
+            }
+
+        }
+
+        .footer-app {
+            padding: 20px 50px 20px 50px;
+            border-left-style: dashed;
+            border-color: #292929;
+
+            .app_logo {
+                row-gap: 20px;
+            }
+        }
+    }
+
+    .copy_right {
+        padding: 70px 0px 0px;
+        color: #cecece;
+    }
+}
+
+
+
+///Media Query For Tablset
+
+@media only screen and (max-width:800px) {
+    .footer {
+        h2{
+            text-align: center;
+        }
+        .footer-content {
+            justify-content: center;
+            flex-direction: row;
+
+            .footer-app {
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .footer {
+        h2 {
+            font-size: 30px;
+            
+        }
+
+        .footer-content {
+            flex-direction: column;
+            .footer-dec {
+                text-align: center;
+                padding: 0px;
+            }
+
+            .footer-app {
+                border: none;
+            }
+        }
+
+    }
+    .copy_right{
+        flex-direction: row;
+        p{
+            padding: 10px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+
+@import url('../../Styles/Styles.scss');
+
+@media only screen and (max-width: 600px) {
+
+    .Brands{
+        flex-wrap: wrap;
+    flex-direction: row;
+        
+        align-items: center;
+        padding: 0px;
+        img{
+            width: 24%;
+            padding: 15px 15px;
+        }
+    }
+  }

@@ -1,0 +1,98 @@
+.Table {
+    h2 {
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .Table-Cont {
+        display: flex;
+        background-color: #00210D;
+        border-radius: 18px;
+        padding: 20px;
+        margin-bottom: 140px;
+        .table-topics {
+            width: 28%;
+            display: flex;
+            text-align: left;
+            flex-direction: column;
+        }
+
+        .table-metaforms {
+            width: 12%;
+            scale: 1.3;
+            background: rgba(0, 95, 61, 0.7);
+            box-shadow: 0 8px 32px 0 rgba(0, 95, 61, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 16px;
+
+            .t-h {
+                font-weight: 600;
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .close-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 11px 11px;
+                color: #009055;
+            }
+        }
+
+        .table-typeforms {
+            width: 18%;
+
+            .t-h {
+                font-weight: 600;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    padding-right: 10px;
+                    margin-bottom: -5px;
+                    font-weight: 900;
+                }
+            }
+
+            .close-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 11px 11px;
+                color: #009055;
+            }
+        }
+
+
+    }
+}
+
+///Media Query For Tablet
+
+@media only screen and (max-width:800px) {
+    .Table {
+        h2 {
+            text-align: center;
+        }
+        .Table-Cont{
+            overflow: visible;
+        }
+
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .Table {
+        display: none;
+    }
+}
